@@ -1,0 +1,128 @@
+:root {
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 10%;
+  font-size: 20px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+main {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 640px;
+  text-align: center;
+}
+
+.logo {
+  height: 24px;
+  margin-bottom: 2em;
+}
+
+.titulo {
+  font-size: 2em;
+  font-weight: 300;
+  color: var(--gray);
+  margin-bottom: .25em;
+}
+
+.titulo span {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+.subtitulo {
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.formulario {
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 1em;
+}
+
+.formulario__grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.formulario__input {
+  width: calc(100% - 3em);
+  font-size: 1em;
+  border-radius: 5em;
+  padding: 1em 1em 1em 2em;
+  border: 1px solid var(--pale-blue);
+}
+
+.formulario__erro {
+  color: var(--light-red);
+  margin-left: 2em;
+  margin-top: .25em;
+}
+
+.formulario__botao {
+  background-color: var(--blue);
+  color: white;
+  border-radius: 5em;
+  width: 25%;
+  border: 0;
+  font-size: 1em;
+  padding: 1em;
+}
+
+.imagem {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+  margin-bottom: 1em;
+}
+
+.social__icone {
+  border-radius: 10em;
+  border: 1px solid var(--pale-blue);
+  padding: .5em;
+  color: var(--blue);
+}
+
+.copyright {
+  margin-bottom: 10%;
+  font-size: 1em;
+  color: var(--gray);
+}
+
+@media screen and (max-width: 600px) {
+  .formulario {
+    flex-direction: column;
+  }
+
+  /* .formulario__input {
+    width: calc(100% - 3em);
+  } */
+
+  .formulario__botao {
+    width: 100%;
+  }
+}
