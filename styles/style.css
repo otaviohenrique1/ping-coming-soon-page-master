@@ -70,22 +70,34 @@ main {
   border-radius: 5em;
   padding: 1em 1em 1em 2em;
   border: 1px solid var(--pale-blue);
+  color: var(--very-dark-blue);
+}
+
+.formulario__input::placeholder {
+  color: var(--pale-blue);
 }
 
 .formulario__erro {
   color: var(--light-red);
   margin-left: 2em;
   margin-top: .25em;
+  font-style: italic;
 }
 
 .formulario__botao {
   background-color: var(--blue);
   color: white;
   border-radius: 5em;
-  width: 25%;
+  width: 40%;
   border: 0;
   font-size: 1em;
   padding: 1em;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.formulario__botao:hover {
+  opacity: .8;
 }
 
 .imagem {
@@ -100,12 +112,19 @@ main {
   margin-bottom: 1em;
 }
 
-.social__icone {
+.social__link {
   border-radius: 10em;
   border: 1px solid var(--pale-blue);
   padding: .5em;
   color: var(--blue);
 }
+
+.social__link:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+/* .social__icone {} */
 
 .copyright {
   margin-bottom: 10%;
