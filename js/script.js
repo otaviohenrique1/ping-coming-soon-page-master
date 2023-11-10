@@ -3,7 +3,7 @@ const formularioInput = document.querySelector("#formulario-input");
 const formularioErro = document.querySelector("#formulario-erro");
 const formularioBotao = document.querySelector("#formulario-botao");
 
-const mensagemErro = "Please provie a valid email address";
+const mensagemErro = "Please provide a valid email address";
 
 formularioInput.addEventListener("blur", (evento) => {
   let email = formularioInput.value;
