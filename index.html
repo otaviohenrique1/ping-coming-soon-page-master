@@ -25,12 +25,12 @@
     <img src="images/logo.svg" alt="logo" class="logo">
     <h1 class="titulo">We are launching <span>soon!</span></h1>
     <h2 class="subtitulo">Subscribe and get notified</h2>
-    <form class="formulario">
+    <form class="formulario" id="formulario">
       <div class="formulario__grupo">
-        <input type="text" class="formulario__input" placeholder="Your email address...">
-        <span class="formulario__erro">erro</span>
+        <input type="text" class="formulario__input" placeholder="Your email address..." id="formulario-input" required>
+        <span class="formulario__erro" id="formulario-erro"></span>
       </div>
-      <button type="button" class="formulario__botao">Notify Me</button>
+      <button type="submit" class="formulario__botao" id="formulario-botao">Notify Me</button>
     </form>
     <img src="images/illustration-dashboard.png" alt="illustration-dashboard" class="imagem">
     <div class="social">
@@ -46,6 +46,7 @@
     </div>
     <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
   </main>
+  <script src="js/script.js"></script>
   <!-- <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

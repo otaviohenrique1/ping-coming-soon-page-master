@@ -46,7 +46,7 @@ main {
 .subtitulo {
   font-size: 1em;
   font-weight: 300;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .formulario {
@@ -75,6 +75,10 @@ main {
 
 .formulario__input::placeholder {
   color: var(--pale-blue);
+}
+
+.formulario__input--erro {
+  border: 1px solid var(--light-red);
 }
 
 .formulario__erro {
