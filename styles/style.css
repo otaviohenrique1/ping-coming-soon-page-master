@@ -18,10 +18,6 @@ body {
 }
 
 main {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items: center; */
   width: 640px;
   text-align: center;
 }
@@ -128,8 +124,6 @@ main {
   color: white;
 }
 
-/* .social__icone {} */
-
 .copyright {
   margin-bottom: 10%;
   font-size: 1em;
@@ -140,10 +134,6 @@ main {
   .formulario {
     flex-direction: column;
   }
-
-  /* .formulario__input {
-    width: calc(100% - 3em);
-  } */
 
   .formulario__botao {
     width: 100%;

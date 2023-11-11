@@ -14,7 +14,6 @@ formularioInput.addEventListener("invalid", (evento) => evento.preventDefault())
 
 formulario.addEventListener("submit", (evento) => {
   evento.preventDefault()
-  // let email = document.forms["formulario"]["formulario-input"].value;
   let email = formularioInput.value;
   validaCampo(email);
 });
